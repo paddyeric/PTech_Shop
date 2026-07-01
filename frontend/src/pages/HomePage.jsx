@@ -15,8 +15,8 @@ const HomePage = () => {
                 </div>
 
                 <div className='flex-1 space-y-4 mr-8'>
-                    <div className='text-5xl font-black md:text-7xl'>PTech Shop</div>
-                    <div className='font-medium md:text-xl'>
+                    <div className='text-5xl font-black md:text-7xl text-#0F172A'>PTech Shop</div>
+                    <div className='font-medium md:text-xl text-#0F172A'>
                         Welcome to Your Trusted Tech Store!
                         Discover the latest smartphones, laptops, PlayStations, accessories, and
                         other top-quality electronic gadgets at unbeatable prices. At PTech Shop,

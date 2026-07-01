@@ -22,7 +22,7 @@ const Categories = () => {
     return (
         <div className='mt-20'>
             <div className='flex items-center justify-center mb-6'>
-                <div className='bg-center text-4xl font-extrabold dark:text-white bg-[url("https://res.cloudinary.com/dxxc4e93b/image/upload/v1781692935/line_jffpwl.png")]'>
+                <div className='bg-center text-4xl font-extrabold dark:text-black bg-[url("https://res.cloudinary.com/dxxc4e93b/image/upload/v1781692935/line_jffpwl.png")]'>
                     CATEGORIES
                 </div>
             </div>
