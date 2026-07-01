@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.dropdown-toggle{
+    @apply text-white !important; 
+}
+
+.navbar-toggler-icon{
+    @apply size-5 bg-white !important; 
+}
