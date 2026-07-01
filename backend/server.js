@@ -9,11 +9,10 @@ import connectCloudinary from './config/cloudinary.js';
 import userRoute from "./routes/userRoute.js";
 import productRoute from "./routes/productRoute.js";
 import stripeRoute from './routes/stripeRoute.js'
-
+dotenv.config();
 const PORT = process.env.PORT || 8000;
 const app = express();
 
-dotenv.config();
 
 dbConnection();
 connectCloudinary();
@@ -30,8 +29,8 @@ app.use("/api", stripeRoute);
 app.use(notFound);
 app.use(errorHandler);
 
-app.get('/', (req, res) => {
-    res.send('API is running...');
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "API is running", status: "ok" });
 });
 
 app.listen(PORT, () => {
