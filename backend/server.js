@@ -13,7 +13,6 @@ dotenv.config();
 const PORT = process.env.PORT || 8000;
 const app = express();
 
-
 dbConnection();
 connectCloudinary();
 
@@ -28,10 +27,6 @@ app.use("/api", stripeRoute);
 
 app.use(notFound);
 app.use(errorHandler);
-
-app.get("/", (req, res) => {
-  res.status(200).json({ message: "API is running smoothly", status: "ok" });
-});
 
 app.listen(PORT, () => {
   console.log(`server running on Port ${PORT}`);
