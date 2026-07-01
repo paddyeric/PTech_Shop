@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { LinkContainer } from "react-router-bootstrap";
-import { Table, Button, Row, Col } from "react-bootstrap";
+import { Table, Button, Col } from "react-bootstrap";
 import { FaEdit, FaTrash } from "react-icons/fa";
 import { getProducts, deleteProduct } from "../../api/apiAdmin";
 import { Link } from "react-router-dom";
