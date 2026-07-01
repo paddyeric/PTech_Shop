@@ -14,9 +14,9 @@ const Footer = () => {
             <p className="text-center">&copy; 2026 PTech Shop. <br /> All Rights Reserved Terms of Use and Privacy Policy.</p>
 
             <div className="flex space-x-4">
-                <a href="https://web.facebook.com/" target="_blank" className="text-decoration-none text-white"><BsFacebook size={25} /></a>
-                <a href="https://x.com/" target="_blank" className="text-decoration-none text-white"><AiFillTwitterCircle size={28} /></a>
-                <a href="https://www.instagram.com/" target="_blank" className="text-decoration-none text-white"><SiInstagram size={25} /></a>
+                <a href="https://web.facebook.com/" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-white"><BsFacebook size={25} /></a>
+                <a href="https://x.com/" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-white"><AiFillTwitterCircle size={28} /></a>
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="text-decoration-none text-white"><SiInstagram size={25} /></a>
             </div>
         </div>
     )
