@@ -10,13 +10,10 @@ PTech Shop is a full-stack ecommerce web application for browsing products, sear
 - Payments: Stripe checkout integration
 - Media: Cloudinary image uploads for products
 
- Project Structure
-
-text
-backend/         Express API, controllers, models, routes
-frontend/        React client app
-README.md        Project overview
-
+ Project Structure:
+- backend/         Express API, controllers, models, routes
+- frontend/        React client app
+- README.md        Project overview
 
  Features
 
@@ -65,13 +62,13 @@ Backend
 Create a file named .env inside the backend folder:
 
 env
-PORT=8000
-MONGODB_URI=your_mongodb_connection_string
-JWT_SECRET=your_jwt_secret
-STRIPE_SECRET_KEY=your_stripe_secret_key
-CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
+- PORT=8000
+- MONGODB_URI=your_mongodb_connection_string
+- JWT_SECRET=your_jwt_secret
+- STRIPE_SECRET_KEY=your_stripe_secret_key
+- CLOUDINARY_CLOUD_NAME=your_cloud_name
+- CLOUDINARY_API_KEY=your_api_key
+- CLOUDINARY_API_SECRET=your_api_secret
 
 
  Frontend
@@ -83,58 +80,41 @@ REACT_APP_API_URL=http://localhost:8000/api
 
  Installation
 1) Install root dependencies
-
 bash
 npm install
 
 
 2) Install frontend dependencies
-
 bash
 npm install --prefix frontend
 
+Running the App
 
- Running the App
-
- Start the backend
-
+Start the backend:
 bash
 npm run server
 
-
 The backend runs at:
-
-text
-http://localhost:8000
+- http://localhost:8000
 
 
- Start the frontend
-
+Start the frontend:
 bash
 npm start --prefix frontend
 
-
 The frontend runs at:
+- http://localhost:3000
 
-text
-http://localhost:3000
-
-
- Run both together
-
+Run both together
 bash
-npm run dev
-
+- npm run dev
 
 This starts the backend and frontend concurrently.
 
  API Overview
-
+ 
 The backend exposes routes under:
-
-text
-http://localhost:8000/api
-
+- http://localhost:8000/api
 
  Authentication
 - POST /api/users/signup
@@ -153,14 +133,12 @@ http://localhost:8000/api
 - POST /api/checkout-session
 
  Notes
-
 - The frontend uses the API URL from the frontend environment variable.
 - The backend validates JWT tokens from cookies or the Authorization header.
 - Admin-only routes are protected by authentication and admin checks.
 - Product image uploads are handled through Cloudinary.
 
  Main Backend and Frontend Entry Points
-
 - Backend entry: backend/server.js
 - Frontend entry: frontend/src/index.js
 - Main app router: frontend/src/App.js
@@ -168,7 +146,6 @@ http://localhost:8000/api
  Deploying with Render (Backend) and Vercel (Frontend)
 
  Backend on Render
-
 1. Create a new Web Service on Render.
 2. Connect your GitHub repository.
 3. Set the root directory to the project root or the backend folder, depending on your setup.
@@ -186,7 +163,6 @@ http://localhost:8000/api
 6. Deploy the service and copy the generated Render URL.
 
  Frontend on Vercel
-
 1. Create a new Vercel project and import your GitHub repository.
 2. Set the project root to the frontend folder.
 3. Add this environment variable in Vercel:
@@ -194,7 +170,6 @@ http://localhost:8000/api
 4. Deploy the project.
 
  Important notes
-
 - Replace the backend URL in the frontend environment variable with your live Render URL.
 - If your frontend uses a proxy or other API config, update it to point to the deployed backend.
 - Make sure your MongoDB database allows connections from Render and Vercel-hosted apps if needed.
